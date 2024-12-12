@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-umbrella-beach"></i>
+                <span>Tour Admin</span>
+            </div>
+            <nav>
+                <ul>
+                    <li id="homeNav">
+                        <i class="fas fa-home"></i>
+                        <span>Trang chủ</span>
+                    </li>
+                    <li id="userNav">
+                        <i class="fas fa-users"></i>
+                        <span>Quản lý người dùng</span>
+                    </li>
+                    <li id="tourNav">
+                        <i class="fas fa-route"></i>
+                        <span>Quản lý tour</span>
+                    </li>
+                    <li id="logoutNav">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Đăng xuất</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- User Management Section -->
+            <section id="userSection" style="display: none;">
+                <div class="header">
+                    <h1>Quản lý tài khoản</h1>
+                    <button id="addUserBtn" class="btn-primary">
+                        <i class="fas fa-plus"></i> Thêm tài khoản
+                    </button>
+                </div>
+    
+                <div class="user-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên người dùng</th>
+                                <th>Email</th>
+				<th>SĐT</th>
+                                <th>Mật khẩu</th>
+                                <th>Vai trò</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+    
+            <!-- Tour Management Section -->
+            <section id="tourSection" style="display: none;">
+                <div class="header">
+                    <h1>Quản lý tour du lịch</h1>
+                    <button id="addTourBtn" class="btn-primary">
+                        <i class="fas fa-plus"></i> Thêm Tour
+                    </button>
+                </div>
+    
+                <div class="tour-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên Tour</th>
+                                <th>Địa điểm</th>
+                                <th>Thời gian</th>
+                                <th>Giá</th>
+                                <th>Mô tả</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tourTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Tour Modal -->
+        <div id="tourModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <form id="tourForm">
+                    <div class="form-group">
+                        <label for="tourName">Tên Tour:</label>
+                        <input type="text" id="tourName" placeholder="Nhập tên tour" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Địa điểm:</label>
+                        <input type="text" id="destination" placeholder="Nhập địa điểm" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Thời gian (ngày):</label>
+                        <input type="number" id="duration" placeholder="Nhập số ngày" required min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Giá (VNĐ):</label>
+                        <input type="number" id="price" placeholder="Nhập giá tour" required min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Trạng thái:</label>
+                        <select id="status" required>
+                            <option value="" disabled selected>Chọn trạng thái</option>
+                            <option value="Đã đặt">Đã đặt</option>
+                            <option value="Đang diễn ra">Đang diễn ra</option>
+                            <option value="Đã hủy">Đã hủy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Mô tả:</label>
+                        <textarea id="description" placeholder="Nhập mô tả" required rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Lưu</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- User Modal -->
+        <div id="userModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="userName">Tên người dùng:</label>
+                        <input type="text" id="userName" placeholder="Nhập tên người dùng" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email:</label>
+                        <input type="email" id="userEmail" placeholder="Nhập email" required>
+                    </div>
+		    <div class="form-group">
+                        <label for="userPhone">SĐT:</label>
+                        <input type="number" id="userPhone" placeholder="Nhập SĐT" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPassword">Mật khẩu:</label>
+                        <div class="password-input">
+                            <input type="password" id="userPassword" placeholder="Nhập mật khẩu" required>
+                            <i class="fas fa-eye toggle-password"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="userRole">Role:</label>
+                        <select id="userRole" required>
+                            <option value="" disabled selected>Chọn Role</option>
+                            <option value="Quản trị viên">Quản trị viên</option>
+                            <option value="Người dùng">Người dùng</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userStatus">Trạng thái:</label>
+                        <select id="userStatus" required>
+                            <option value="" disabled selected>Chọn trạng thái</option>
+                            <option value="Hoạt động">Hoạt động</option>
+                            <option value="Không hoạt động">Không hoạt động</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Lưu</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/tourControl.js"></script>
+    <script src="js/userControl.js"></script>
+    <script src="js/switch.js"></script>
+</body>
+</html>
