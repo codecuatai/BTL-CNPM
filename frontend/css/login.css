@@ -1,0 +1,203 @@
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* Container chính */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 2rem; /* Khoảng cách giữa form và slider */
+    background-color: var(--light-bg);
+    padding: 2rem;
+}
+
+.slider-container {
+    position: relative;
+    width: 618px;
+    height: 816px;
+    overflow: hidden;
+    background-color: var(--light-bg);
+    border-radius: 24px; /* Tăng bo góc để giống ảnh */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px; 
+}
+
+/* Form đăng nhập */
+.login-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Tiêu đề đăng nhập */
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+/* Các nhóm input */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* Nhớ mật khẩu và Quên mật khẩu cùng một dòng */
+.remember-me-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem; /* Khoảng cách dưới */
+}
+
+.remember-me-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.remember-me-container label {
+    font-size: 0.875rem;
+    margin-right: auto; /* Đảm bảo label chiếm không gian còn lại */
+}
+
+/* Quên mật khẩu */
+.forgot-password {
+    font-size: 0.875rem;
+    color: rgb(238, 77, 77);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Nút đăng nhập */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgb(141, 211, 187);
+    color: black;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Liên kết đăng ký */
+.signup-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.signup-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Chia phần xã hội */
+.social-divider {
+    text-align: center;
+    position: relative;
+    margin: 1.5rem 0;
+    color:gray;
+}
+
+.social-divider::before,
+.social-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #e5e7eb;
+}
+
+.social-divider::before {
+    left: 0;
+}
+
+.social-divider::after {
+    right: 0;
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-button {
+    width: 200px; /* Kích thước ô vuông */
+    height: 50px; /* Kích thước ô vuông */
+    border: 0.5px solid rgb(141, 211, 187); /* Viền mỏng */
+    border-radius: 6px; /* Viền bo tròn nhẹ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Màu nền mặc định */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.social-button img {
+    width: 24px;
+    height: 24px;
+}
+.social-button:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.1); 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.
+
+
+

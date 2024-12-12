@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+      <div class="image-slider">
+        <img
+          src="images/resort.png"
+          alt="Resort view"
+        />
+      </div>
+    <div class="form-container">
+      <div class="register-form">
+        <h1 class="register-title">Đăng ký</h1>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ho">Họ</label>
+              <input type="text" id="ho" placeholder="Phan" />
+            </div>
+            <div class="form-group">
+              <label for="ten">Tên</label>
+              <input type="text" id="ten" placeholder="Tam" />
+            </div>
+          </div>
+          <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="abc@gmail.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" id="phone" placeholder="910QGK" />
+          </div>
+          </div>
+          <div class="form-group password-group">
+            <label for="password">Mật khẩu</label>
+            <div class="password-input">
+              <input type="password" id="password" placeholder="••••••••••••" />
+              <button type="button" class="toggle-password">
+                <img src="images/eye.svg" alt="Show password" />
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group password-group">
+            <label for="confirm-password">Nhập lại mật khẩu</label>
+            <div class="password-input">
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="••••••••••••"
+              />
+              <button type="button" class="toggle-password">
+                <img src="images/eye.svg" alt="Show password" />
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="terms" />
+            <label for="terms">Tôi đồng ý với điều khoản và dịch vụ</label>
+          </div>
+
+          <button type="submit" class="submit-btn">Tạo tài khoản</button>
+
+          <div class="login-link">
+            <span>Đã có tài khoản? <a href="login.html">Đăng nhập</a></span>
+          </div>
+        </form>
+ 
+        <div class="social-login">
+          <div class="social-divider">Hoặc</div>
+          <div class ="form-row"
+               <div class="social-buttons">
+                    <button class="social-button">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </button>
+                    <button class="social-button">
+                        <img src="images/google.png" alt="Google">
+                    </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
