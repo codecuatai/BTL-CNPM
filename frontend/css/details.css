@@ -1,0 +1,353 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+  }
+body {
+    background-color: white;
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+/* Utility classes */
+.container {
+    max-width:100%; /* Thu hẹp container */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(141, 211, 187);
+}
+
+.btn-outline {
+    width :48px;
+    height:48px;
+    border: 1px solid #ddd;
+    background: white;
+    border:0.5px solid rgb(141, 211, 187);
+}
+
+.btn-primary {
+    width: 150px;
+    height:48px;
+    background-color: rgb(141, 211, 187);
+    color: black;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {  
+  margin-bottom:-1.5rem;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #ff8286;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    margin: 0 0.5rem;
+    color: #999;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%; /* Đảm bảo navbar chiếm hết chiều rộng */
+    
+    margin: 0 auto; /* Canh giữa navbar */
+}
+
+.nav-items, .nav-user {
+    display: flex;
+    gap: 2rem;
+    align-items: left;
+}
+
+.nav-item {
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-item.active {
+    color:black;
+    font-weight: 500;
+}
+
+.nav-item.user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Tour content styles */
+.tour-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.tour-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    color: #ff8286;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tour-actions {
+    text-align: right;
+}
+
+.price {
+    margin-bottom: 1rem;
+    color:#ff8286;
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff8286;
+}
+
+.unit {
+    color: #ff8286;
+    font-size: 0.9rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Tour gallery */
+.tour-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2dvhrem;
+}
+
+.main-image img {
+    width: 800px;px;
+    height: 523px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+	grid-template-columns:repeat(2,1fr);
+	gap:0.5rem;
+    border-radius: 8px;
+}
+
+.image-grid img {
+    width:310px;
+    height: 250px;
+    object-fit: cover;
+	border-radius: 8px;
+}
+
+/* Tour description */
+.tour-description {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.tour-description h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.tour-description p {
+    color: #666;
+    line-height: 1.6;
+}
+/* Reviews section styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+  }
+.stat-rating {
+    font-weight: bold;
+    color: #333;
+    font-size: 32px;
+    padding: 16px 20px;
+}
+.stat-label {
+    font-weight:bold;
+    font-size: 1rem;
+    padding: 8px 20px;
+    color: #333;
+}
+.label{
+    font-size: 1rem;
+    padding: 35px 20px;
+    color: #333;
+}
+.review-count{ 
+  font-size: 1rem;
+  padding: 0px 20px;
+  color: #333;
+}
+.stat-box {
+    width: 150px; 
+    height: 140px; 
+    border-radius: 12px; 
+    flex-direction: column;  
+    display: flex;
+    justify-content: left;
+    background-color: rgb(141, 211, 187); 
+}
+.box {
+    width: 150px; 
+    height: 140px; 
+    border-radius: 12px; 
+    flex-direction: column;  
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    border: 0.5px solid rgb(141, 211, 187);
+}
+.review-stats {
+    display:flex;
+    padding: 0,5rem;
+    gap: 1.5rem; 
+	margin-bottom:2rem;
+}
+
+/* Reviews section styles */
+.reviews {
+    margin-top: 2rem;
+}
+
+.reviews-header {
+    display: flex;
+	
+    justify-content: space-between;
+    align-items: center;
+	margin-bottom: 2rem;
+	margin-left:-2rem;
+}
+
+.reviews-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left:30px;
+}
+
+.btn-review {
+    width:150px;
+    height:48px;
+    background-color: rgb(141, 211, 187);
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.review-item {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviewer-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.reviewer-name {
+    font-weight: 500;
+    color: #2d3436;
+}
+
+.review-rating {
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.review-text {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    margin-botton:-2rem;
+}
+
+.flag-button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0.5rem;
+}
