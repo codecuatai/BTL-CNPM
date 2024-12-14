@@ -1,0 +1,461 @@
+/* Button Components */
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary {
+	width:400px;
+	height:48px;
+    background-color: var(--primary-color);
+    color: black;
+    padding: 10px 20px;
+}
+
+.btn-favorite {
+	width:48px;
+	height:48px;
+    border:0.5px solid var(--primary-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+	justify-content:center;
+    gap: 5px;
+}
+
+.btn-favorite i {
+    color: black;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Filter Components */
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Core styles and variables */
+:root {
+    --primary-color: rgb(141, 211, 187);
+    --secondary-color: #2196F3;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Destination card styles */
+.destinations {
+    display: grid;
+    gap: 20px;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+}
+
+.destination-image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 20px;
+    flex: 1;
+}
+/* Range Slider Component */
+.range-slider {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.slider-track {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: calc(100% - 24px);
+    background: #666;
+    border-radius: 2px;
+}
+
+.slider-track::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.range-slider input[type="range"] {
+    -webkit-appearance: none;
+    position: absolute;
+    width: calc(100% - 24px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    pointer-events: none
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    pointer-events: auto;
+    margin-top: -6px;
+}
+
+.slider-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: var(--text-color);
+    font-size: 14px;
+}
+/* Rating Filters Component */
+.filter-group {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.filter-header h4 {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.filter-header i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.filter-header.expanded i {
+    transform: rotate(180deg);
+}
+
+/* Star Rating Buttons */
+.rateing-filters {
+    display: flex;
+	gap:20px;
+}
+
+.rating-btn {
+	width:48px;
+	height:48px;
+    border:0.5px solid var(--primary-color);
+	background-color:white;
+	border-radius:4px;
+    align-items: center;
+	justify-content:center;
+	
+}
+
+.rating-btn:hover {
+    border-color: var(--primary-color);
+    background: var(--light-gray);
+}
+
+.rating-btn.active {
+    border-color: var(--primary-color);
+    background: var(--primary-color-light);
+}
+
+.stars {
+    color: #FF8286;
+    margin-right: 8px;
+}
+
+/* Airlines Filter */
+.airline-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.airline-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.airline-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.airline-checkbox label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Satisfaction Level Filter */
+.satisfaction-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.satisfaction-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.satisfaction-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.satisfaction-checkbox label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Search Section Component */
+.search-section {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr auto;
+    gap: 16px;
+    align-items: center;
+}
+
+.search-input-group {
+    position: relative;
+}
+
+.search-input-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    pointer-events: none;
+}
+
+.search-input-group input,
+.search-input-group select {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.search-input-group input:focus,
+.search-input-group select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+    outline: none;
+}
+
+.search-input-group label {
+    display: block;
+    margin-bottom: -3px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.search-button {
+    height: 42px;
+	width:45px;
+    margin-top:1.1rem;
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+	justify-content:center;
+}
+
+.search-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.search-button i {
+    font-size: 16px;
+}
+.stats{
+	display:flex;
+	gap:10px;
+}
+
+.score {
+	width:40px;
+	height:20px;
+    border:0.5px solid var(--primary-color);
+	border-radius:2px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+	justify-content:center;
+    gap: 5px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .search-form {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .search-button {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-button {
+        grid-column: auto;
+    }
+}
+/* Navigation styles */
+.navbar {
+	
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	max-width:1200px;
+    margin: 0 auto; /* Canh giữa navbar */
+	margin-bottom:2rem;
+}
+
+.nav-items, .nav-user {
+    display: flex;
+    gap: 2rem;
+    align-items: left;
+}
+
+.nav-item {
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-item.active {
+    color:black;
+    font-weight: 500;
+}
+
+.nav-item.user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+

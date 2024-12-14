@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Tour Du Lịch</title>
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="css/findTour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="navbar">
+        <div class="nav-items">
+            <a href="#" class="nav-item active"><i class="fas fa-plane"></i> Tìm chuyến đi</a>
+            <a href="#" class="nav-item"><i class="fas fa-map-marked-alt"></i> Tìm tour</a>
+        </div>
+        <div class="nav-user">
+            <a href="#" class="nav-item"><i class="fas fa-heart"></i> Yêu thích</a>
+            <a href="#" class="nav-item user">
+                <img src="images/logo.jpg" alt="User" class="avatar">
+                Tam Phan
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <form class="search-form">
+                <div class="search-input-group">
+                    <label>Đi-đến</label>
+                    <input type="text" placeholder="Chọn điểm khởi hành" value="Hà Nội - Hồ Chí Minh">
+                </div>
+                
+                <div class="search-input-group">
+                    <label>Chuyến đi</label>                 
+                    <select>
+                        <option value="">Khứ hồi</option>
+                        <option value="one-way">Một chiều</option>
+                    </select>
+                </div>
+                
+                <div class="search-input-group">
+                    <label>Ngày đi-Ngày về</label>                  
+                    <input type="text" placeholder="Chọn ngày" value="07/11/2024 - 13/11/2024">
+                </div>
+                
+                <div class="search-input-group">
+                    <label>Hạng ghế</label>
+                    <select>
+                        <option value="">Phổ thông</option>
+                        <option value="business">Thương gia</option>
+                        <option value="first">Hạng nhất</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </section>
+
+        <div class="main-content">
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <h3>Lọc</h3>
+                    
+                    <!-- Price Filter -->
+                    <div class="filter-section">
+                        <h4>Giá</h4>
+                        <div class="range-slider">
+                            <div class="slider-track"></div>
+                            <input type="range" min="50" max="1000" value="50" class="slider-min">
+                            <input type="range" min="50" max="1000" value="1000" class="slider-max">
+                            <div class="slider-values">
+                                <span>$50</span>
+                                <span>$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Time Filter -->
+				<div class="filter-group">
+                    <div class="filter-section">
+                        <h4>Thời gian</h4>
+                        <div class="range-slider">
+                            <div class="slider-track"></div>
+                            <input type="range" min="1" max="30" value="1" class="slider-min">
+                            <input type="range" min="1" max="30" value="30" class="slider-max">
+                            <div class="slider-values">
+                                <span>1 ngày</span>
+                                <span>30 ngày</span>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+                    <!-- Rating Filter -->
+				<div class="filter-group">
+                    <div class="filter-section">
+                        <h4>Đánh giá</h4>
+                        <div class="rating-filters"></div>
+						<button class="rating-btn">5*</button>
+						<button class="rating-btn">4*</button>
+						<button class="rating-btn">3*</button>
+						<button class="rating-btn">2*</button>
+						<button class="rating-btn">1*</button>
+                    </div>
+
+                    <!-- Airlines Filter -->
+                    <div class="filter-section">
+                        <h4>Hãng hàng không</h4>
+						
+						</div>
+					<div class="airline-filter-group">
+						<div class="airline-checkbox">
+							<input type="checkbox" id="vietnam-airlines" value="vietnam-airlines">
+							<label for="vietnam-airlines">Vietnam Airlines</label>
+						</div>
+						<div class="airline-checkbox">
+							<input type="checkbox" id="vietjet-air" value="vietjet-air">
+							<label for="vietjet-air">Vietjet Air</label>
+						</div>
+						<div class="airline-checkbox">
+							<input type="checkbox" id="bamboo-airways" value="bamboo-airways">
+							<label for="bamboo-airways">Bamboo Airways</label>
+						</div>
+						<div class="airline-checkbox">
+							<input type="checkbox" id="other-airlines" value="other">
+							<label for="other-airlines">Khác</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter-group">
+					<div class="filter-section">
+						<h4>Mức độ hài lòng</h4>
+					</div>
+					<div class="satisfaction-filter-group">
+						<div class="satisfaction-checkbox">
+							<input type="checkbox" id="excellent" value="excellent">
+							<label for="excellent">Tuyệt vời</label>
+						</div>
+						<div class="satisfaction-checkbox">
+							<input type="checkbox" id="very-good" value="very-good">
+							<label for="very-good">Rất tốt</label>
+						</div>
+						<div class="satisfaction-checkbox">
+							<input type="checkbox" id="good" value="good">
+							<label for="good">Tốt</label>
+						</div>
+						<div class="satisfaction-checkbox">
+							<input type="checkbox" id="average" value="average">
+							<label for="average">Bình thường</label>
+						</div>
+						<div class="satisfaction-checkbox">
+							<input type="checkbox" id="poor" value="poor">
+							<label for="poor">Tệ</label>
+						</div>
+					</div>
+				</div>
+            </div>
+		
+		
+		
+            <!-- Destinations -->
+            <div class="destinations">
+                <!-- Destination Cards will be dynamically loaded here -->
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/Dalat-main.jpg" alt="Đà Lạt">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Đà Lạt</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.5</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="btn btn-favorite">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <button class="btn btn-primary"><a href="chitiet.html">Xem chi tiết</a>
+							</button>
+							
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="btn btn-favorite">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <button class="btn btn-primary">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="btn btn-favorite">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <button class="btn btn-primary">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="btn btn-favorite">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <button class="btn btn-primary">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="btn btn-favorite">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <button class="btn btn-primary">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+</body>
+</html>
