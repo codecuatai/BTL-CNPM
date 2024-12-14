@@ -77,15 +77,15 @@ input[type='email']{
     min-height: 100vh;
     align-items: center; /* Căn giữa theo chiều dọc */
     justify-content: center; /* Căn giữa theo chiều ngang */
-    gap: 2rem; /* Khoảng cách giữa form và slider */
+    gap: 2rem; 
     background-color: var(--light-bg);
     padding: 2rem;
 }
 
 .slider-container {
     position: relative;
-    width: 618px;
-    height: 816px;
+    width: 600px;
+    height: 800px;
     overflow: hidden;
     background-color: var(--light-bg);
     border-radius: 24px; 
@@ -148,7 +148,12 @@ input[type='email']{
     margin-top: 1.5rem;
     font-size: 0.875rem;
 }
-
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
 .back-link a {
     color: black;
     text-decoration: none;
@@ -163,5 +168,5 @@ input[type='email']{
     background-color: var(--white);
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+
 }
