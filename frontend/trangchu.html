@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelnest</title>
+    <link rel="stylesheet" href="trangchu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-items">
+            <a href="trangchu.html" class="nav-item active"><i class="fas fa-plane"></i> Tìm chuyến đi</a>
+            <a href="timtour.html" class="nav-item active"><i class="fas fa-map-marked-alt"></i> Tìm tour</a>
+        </div>
+        <div class="nav-user">
+            <a href="#" class="nav-item"><i class="fas fa-heart"></i> Yêu thích</a>
+            <a href="login.html" class="nav-item user">
+                <img src="images/logo.jpg" alt="User" class="avatar">
+                Đăng nhập
+            </a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img src="images/Frame.png" alt="Background" class="hero-image" />
+        <div class="search-box">
+            <h2>Bạn muốn đi đâu?</h2>
+            <form class="search-form">
+                <div class="form-group">
+                    <label>Đi - Đến</label>
+                    <div class="input-with-icon">
+                        <input type="text" placeholder="Hà Nội - Hồ Chí Minh" />
+                        <span class="swap-icon">⇄</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Chuyến đi</label>
+                    <select>
+                        <option>Khứ hồi</option>
+                        <option>Một chiều</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Ngày đi - Ngày về</label>
+                    <input type="text" placeholder="07/11/2024 - 13/11/2024" />
+                </div>
+
+                <div class="form-group">
+                    <label>Hạng ghế</label>
+                    <input type="text" placeholder="1 Người,Phổ thông" />
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="search-button">
+                        <span class="plane-icon">✈</span>
+                        Tìm kiếm
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+			<div class="header-left">
+				<h1>Chìm đắm trong các chuyến đi</h1>
+				<a href="#" class="see-all">See All</a>
+			</div>
+				<p>Bạn có đi đâu  không? Dù bạn về nhà hay đi đâu đó, chúng tôi có những công cụ du lịch giúp bạn đến được điểm đến của mình.</p>				
+        </div>
+
+        <section class="destinations-grid">
+            <article class="destination-card ">
+				<div class="card-image">
+					<img src ="images/1.png" alt ="Sapa">
+				</div>	
+                <div class="card-content">				
+                    <div class="header-left">
+						<h2>Sapa</h2>
+						<div class="price">$700</div>
+					</div>
+                    <button class="book-btn">Đặt ngay</button>
+                </div>
+            </article>
+
+            <article class="destination-card ">
+                <div class="card-image">
+					<img src ="images/2.png" alt ="HaLong">
+				</div>
+				<div class="card-content">					
+                    <div class="header-left">
+						<h2>Hạ Long</h2>
+						<div class="price">$600</div>
+					</div>
+                    <button class="book-btn">Đặt ngay</button>
+                </div>
+            </article>
+
+            <article class="destination-card ">
+				<div class="card-image">
+					<img src ="images/3.png" alt ="DaNang">
+				</div>
+				<div class="card-content">				
+					<div class="header-left">
+						<h2>Đà Nẵng</h2>                  
+						<div class="price">$350</div>
+					</div>
+                    <button class="book-btn">Đặt ngay</button>
+                </div>
+            </article>
+			
+            <article class="destination-card ">
+                <div class="card-image">
+					<img src ="images/4.png" alt ="Dalat">
+				</div>
+				<div class="card-content">					
+                    <div class="header-left">
+						<h2>Đà Lạt</h2>                   
+						<div class="price">$700</div>
+					</div>
+                    <button class="book-btn">Đặt ngay</button>
+                </div>
+            </article>
+        </section>
+		<div class="header">
+            <div class="header-left">
+				<h1>Đi nào</h1>
+				<a href="#" class="see-all">See All</a>
+			</div>
+            <p>Bạn có đi đâu  không? Dù bạn về nhà hay đi đâu đó, chúng tôi có những công cụ du lịch giúp bạn đến được điểm đến của mình.</p>
+            
+        </div>
+        <section class="featured-destination">
+            <div class="featured-content">
+				<div class="header-left">
+					<h2>Sapa</h2>
+					<div class="prices">$700 </div>
+				</div>
+					<div class="text"> Du lịch là một trải nghiệm độc đáo vì đây là cách tốt nhất để thoát khỏi những áp lực của cuộc sống hàng ngày. Nó giúp chúng ta quên đi những vấn đề, sự thất vọng và nỗi sợ hãi ở nhà. Trong hành trình của mình, chúng ta trải nghiệm cuộc sống theo những cách khác nhau. Chúng ta khám phá những địa điểm mới, văn hóa, ẩm thực, truyền thống và cách sống khác nhau..</div>
+                <button class="book-button">Đặt ngay</button>
+            </div>
+            <div class="featured-images">
+                <img src="images/5.png" alt="Sri Lanka Coastline">
+                <img src="images/6.png" alt="Sri Lanka Forest">
+                <img src="images/7.png" alt="Sri Lanka Beach Resort">
+                <img src="images/8.png" alt="Sri Lanka Beach Resort">
+            </div>
+        </section>
+		<div class="header">
+            <div class="header-left">
+				<h1>Đi nào!</h1>
+				<a href="#" class="see-all">See All</a>
+			</div>
+            <p>Khám phá mọi ngóc ngách trên thế giới với TravelNest</p>
+			<img src="images/Frame1.png" class="image">
+		</div>
+		</div>
+    </div>
+</body>
+</html>
