@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="thanhtoan/styles/main.css" />
+    <link rel="stylesheet" href="thanhtoan/styles/card.css" />
+    <link rel="stylesheet" href="thanhtoan/styles/summary.css" />
+    <link rel="stylesheet" href="trangchu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-items">
+        <a href="trangchu.html" class="nav-item active"
+          ><i class="fas fa-plane"></i> Tìm chuyến đi</a
+        >
+        <a href="timtour.html" class="nav-item active"
+          ><i class="fas fa-map-marked-alt"></i> Tìm tour</a
+        >
+      </div>
+      <div class="nav-user">
+        <a href="#" class="nav-item"><i class="fas fa-heart"></i> Yêu thích</a>
+        <a href="login.html" class="nav-item user">
+          <img src="images/logo.jpg" alt="User" class="avatar" />
+          Đăng nhập
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="#">Hà Nội</a>
+        <span>></span>
+        <a href="#">Sapa</a>
+      </nav>
+
+      <main class="main-content">
+        <div class="payment-section">
+          <div class="tour-info">
+            <img
+              src="thanhtoan/image/sapavn.png"
+              alt="Sapa"
+              class="tour-thumb"
+            />
+            <div class="tour-details">
+              <h1>Sapa</h1>
+              <p>2 ngày 1 đêm</p>
+              <p class="location">Lào Cai, Việt Nam</p>
+            </div>
+          </div>
+
+          <div class="travel-dates">
+            <div class="date">
+              <span>T5, 18/11</span>
+              <small>Ngày đi</small>
+            </div>
+            <div class="flight-icon">✈️</div>
+            <div class="date">
+              <span>T6, 19/11</span>
+              <small>Ngày về</small>
+            </div>
+          </div>
+
+          <div class="payment-methods">
+            <div class="payment-option active">
+              <label>
+                <input type="radio" name="payment" checked />
+                Thanh toán qua ngân hàng
+              </label>
+              <p class="subtitle">Thẻ tín dụng hoặc thẻ ghi nợ</p>
+            </div>
+
+            <div class="payment-option">
+              <label>
+                <input type="radio" name="payment" />
+                Thanh toán bằng ví điện tử
+              </label>
+              <p class="subtitle">Ví điện tử Momo, Zalopay, Paypal...</p>
+            </div>
+          </div>
+
+          <div class="card-section">
+            <div class="card">
+              <div class="card-number">**** **** **** 4321</div>
+              <div class="card-expiry">02/27</div>
+              <div class="card-type">VISA</div>
+            </div>
+            <button class="add-card">
+              <span>+</span>
+              Thêm thẻ ngân hàng
+            </button>
+          </div>
+
+          <div class="payment-form">
+            <input
+              type="text"
+              placeholder="1234 1234 **** 4321"
+              class="card-input"
+            />
+            <button class="pay-button">
+              <a href="thanhtoanthanhcong.html">Thanh toán</a>
+            </button>
+          </div>
+        </div>
+
+        <aside class="price-summary">
+          <div class="tour-preview">
+            <img
+              src="thanhtoan/image/sapavn.png"
+              alt="Sapa Preview"
+              class="preview-image"
+            />
+            <div class="tour-rating">
+              <h2>Sapa</h2>
+              <p>2 ngày 1 đêm</p>
+              <div class="rating">
+                <span>4.2</span>
+                <span>Tốt</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-breakdown">
+            <p class="security-note">Mọi giao dịch của bạn đều được bảo mật</p>
+
+            <div class="price-item">
+              <span>Giá gốc</span>
+              <span>$280</span>
+            </div>
+            <div class="price-item">
+              <span>Giảm giá</span>
+              <span>$0</span>
+            </div>
+            <div class="price-item">
+              <span>Thuế</span>
+              <span>$20</span>
+            </div>
+            <div class="price-item">
+              <span>Phí dịch vụ</span>
+              <span>$5</span>
+            </div>
+            <div class="price-total">
+              <span>Tổng</span>
+              <span>$305</span>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

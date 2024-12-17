@@ -1,0 +1,56 @@
+/* Card styles */
+.card-section {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.card {
+    background: linear-gradient(135deg, #42e695 0%, #3bb2b8 100%);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    width: 280px;
+    height: 170px;
+    position: relative;
+}
+
+.card-number {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.card-expiry {
+    font-size: 14px;
+}
+
+.card-type {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bold;
+}
+
+.add-card {
+    border: 2px dashed #ddd;
+    border-radius: 12px;
+    background: none;
+    width: 280px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.add-card span {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.add-card:hover {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}

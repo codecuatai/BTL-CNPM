@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán thành công</title>
+    <link rel="stylesheet" href="thanhtoanthanhcong/styles/main.css" />
+    <link rel="stylesheet" href="thanhtoanthanhcong/styles/payment.css" />
+    <link rel="stylesheet" href="trangchu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-items">
+          <a href="trangchu.html" class="nav-item active"
+            ><i class="fas fa-plane"></i> Tìm chuyến đi</a
+          >
+          <a href="timtour.html" class="nav-item active"
+            ><i class="fas fa-map-marked-alt"></i> Tìm tour</a
+          >
+        </div>
+        <div class="nav-user">
+          <a href="#" class="nav-item"
+            ><i class="fas fa-heart"></i> Yêu thích</a
+          >
+          <a href="login.html" class="nav-item user">
+            <img src="images/logo.jpg" alt="User" class="avatar" />
+            Đăng nhập
+          </a>
+        </div>
+      </nav>
+      <div class="breadcrumb">
+        <a href="#">Hà Nội</a>
+        <span>></span>
+        <span>Sapa</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="payment-success">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" width="48" height="48">
+            <circle cx="12" cy="12" r="11" fill="#4CAF50" />
+            <path
+              d="M9 12l2 2 4-4"
+              stroke="white"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <h1>Thành công</h1>
+      </div>
+
+      <div class="booking-details">
+        <div class="tour-info">
+          <img src="thanhtoan/image/sapavn.png" alt="Sapa" class="tour-image" />
+          <div class="tour-text">
+            <h2>2 ngày 1 đêm</h2>
+            <p>Lào Cai, Việt Nam</p>
+          </div>
+        </div>
+
+        <div class="price-breakdown">
+          <div class="price-row">
+            <span>Giá gốc</span>
+            <span>$280</span>
+          </div>
+          <div class="price-row">
+            <span>Giảm giá</span>
+            <span>$0</span>
+          </div>
+          <div class="price-row">
+            <span>Thuế</span>
+            <span>$20</span>
+          </div>
+          <div class="price-row">
+            <span>Phí dịch vụ</span>
+            <span>$5</span>
+          </div>
+          <div class="price-row total">
+            <span>Tổng</span>
+            <span>$305</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

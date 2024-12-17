@@ -1,0 +1,66 @@
+/* Price summary styles */
+.price-summary {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tour-preview {
+    margin-bottom: 24px;
+}
+
+.preview-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.tour-rating {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rating {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.rating span:first-child {
+    background: #4CAF50;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.security-note {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.price-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+}
+
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
