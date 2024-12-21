@@ -14,7 +14,7 @@ body {
 
 /* Utility classes */
 .container {
-    max-width:100%; /* Thu hẹp container */
+    max-width:100%; 
     margin: 0 auto;
     padding: 2rem;
 }
@@ -46,7 +46,6 @@ body {
 	color:black;
 }
 
-/* Breadcrumb styles */
 .hop {  
     display: flex;
 	gap:100px;
@@ -72,8 +71,8 @@ body {
     padding: 1rem 2rem;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 100%; /* Đảm bảo navbar chiếm hết chiều rộng */ 
-    margin: 0 auto; /* Canh giữa navbar */
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 .nav-items, .nav-user {
