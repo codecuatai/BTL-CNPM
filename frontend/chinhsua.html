@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Tour Du Lịch</title>
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="css/chinhsua.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="navbar">
+        <div class="nav-items">
+            <a href="#"> ← Chỉnh sửa thông tin</a>
+        </div>
+        <div class="nav-user">				
+            <a href="#" class="nav-item user">
+                <img src="images/logo.jpg" alt="User" class="avatar">
+                Administrator
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <form class="search-form">
+                <div class="search-input-group">
+                    <label>Đi-đến</label>
+                    <input type="text" placeholder="Chọn điểm khởi hành" value="Hà Nội - Hồ Chí Minh">
+                </div>
+                
+                <div class="search-input-group">
+                    <label>Chuyến đi</label>                 
+                    <select>
+                        <option value="">Khứ hồi</option>
+                        <option value="one-way">Một chiều</option>
+                    </select>
+                </div>
+                
+                <div class="search-input-group">
+                    <label>Ngày đi-Ngày về</label>                  
+                    <input type="text" placeholder="Chọn ngày" value="07/11/2024 - 13/11/2024">
+                </div>
+                
+                <div class="search-input-group">
+                    <label>Hạng ghế</label>
+                    <select>
+                        <option value="">Phổ thông</option>
+                        <option value="business">Thương gia</option>
+                        <option value="first">Hạng nhất</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </section>
+
+        <div class="main-content">                      
+            <!-- Destinations -->
+            <div class="destinations">
+                <!-- Destination Cards will be dynamically loaded here -->
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/Dalat-main.jpg" alt="Đà Lạt">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Đà Lạt</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.5</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">                           
+                            <button class="btn btn-primary"><a href="chinhsua1.html" class="link">Chỉnh sửa</a>
+							</button>
+							
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">
+                            
+                            <button class="btn btn-primary"><a href="chinhsua1.html" class="link">Chỉnh sửa</a></button>
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">
+                            
+                            <button class="btn btn-primary"><a href="chinhsua1.html" class="link">Chỉnh sửa</a></button>
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">                           
+                            <button class="btn btn-primary"><a href="chinhsua1.html" class="link">Chỉnh sửa</a></button>
+                        </div>
+                    </div>
+                </div>
+				 <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="images/anh.png" alt="Vịnh Hạ Long">
+                        <span class="image-count"></span>
+                    </div>
+                    <div class="destination-info">
+                        <h2>Vịnh Hạ Long</h2>
+                        <div class="rating">						
+                            <div class="stars">★★★★★</div> <span>5 Sao</span>
+                        </div>
+                        <div class="stats">
+                            <span class="score">4.2</span>
+							<span class="review">Tốt</span>
+                        </div>
+                        <div class="action-buttons">                        
+                            <button class="btn btn-primary"><a href="chinhsua1.html" class="link">Chỉnh sửa</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+</body>
+</html>
