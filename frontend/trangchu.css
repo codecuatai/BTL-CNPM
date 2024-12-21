@@ -46,6 +46,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin-bottom: 2rem;
+	font-weight:bold;
 }
 
 .nav-items, .nav-user {
@@ -64,11 +65,16 @@ body {
     font-weight: 500;
 }
 
-.nav-item.active {
-    color: black;
-    font-weight: 500;
+.nav-item.register{
+	width:100px;
+	height:48px;
+	background-color:#112211;
+	border-radius:8px;
+	color:white;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
-
 .nav-item.user {
 	color:black;
     display: flex;
@@ -81,6 +87,17 @@ body {
     height: 30px;
     border-radius: 50%;
     object-fit: cover;
+}
+.nav-item.trans{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:24px;
+	border: 1px solid #8DD3BB;
+	color:black;
+	width:200px;
+	height:50px;
+	cursor: pointer;
 }
 
 /* Hero Section */
@@ -145,8 +162,14 @@ body {
     flex-wrap: wrap;
     gap: var(--spacing-md);
     align-items: center;
-}
+    justify-content: space-between;
+    width: 100%;
 
+}
+.search-button a{
+	text-decoration:none;
+	color:black;
+}
 /* Form Elements */
 
 .form-group label {
@@ -196,11 +219,7 @@ input:focus, select:focus {
     justify-content: center;
     gap: var(--spacing-xs);
     transition: background-color 0.3s;
-}
-
-.form-actions {
-    margin-left: auto;
-    margin-right: 4.2rem;
+	width:890px;
 }
 
 .search-button:hover {
@@ -229,7 +248,7 @@ input:focus, select:focus {
 	align-items:center;
     color: black;
 	height:40px;
-	width:80px;
+	width:100px;
     text-decoration: none;
 	background-color: white;
 	border-radius:4px;
@@ -384,10 +403,6 @@ input:focus, select:focus {
 
     .hero-content h1 {
         font-size: 2rem;
-    }
-
-    .search-form {
-        grid-template-columns: 1fr;
     }
 
     .destinations-grid {

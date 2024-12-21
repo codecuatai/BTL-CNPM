@@ -39,26 +39,29 @@ body {
     width: 150px;
     height:48px;
     background-color: rgb(141, 211, 187);
-    color: black;
     padding: 0.5rem 1.5rem;
+}
+.btn-primary a{
+	text-decoration:none;
+	color:black;
 }
 
 /* Breadcrumb styles */
-.breadcrumb {  
-  margin-bottom:-1.5rem;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
+.hop {  
+    display: flex;
+	gap:100px;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	font-weight:bold;
+	font-size:1,5rem;
+}
+.hop a{
+	text-decoration:none;
+	color:#333;
 }
 
-.breadcrumb a {
-    color: #ff8286;
-    text-decoration: none;
-}
-
-.breadcrumb span {
-    margin: 0 0.5rem;
-    color: #999;
-}
 
 /* Navigation styles */
 .navbar {
@@ -69,8 +72,7 @@ body {
     padding: 1rem 2rem;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 100%; /* Đảm bảo navbar chiếm hết chiều rộng */
-    
+    width: 100%; /* Đảm bảo navbar chiếm hết chiều rộng */ 
     margin: 0 auto; /* Canh giữa navbar */
 }
 
@@ -106,6 +108,17 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+.nav-item.trans{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:24px;
+	border: 1px solid #8DD3BB;
+	color:black;
+	width:200px;
+	height:50px;
+	cursor: pointer;
+}
 
 /* Tour content styles */
 .tour-header {
@@ -120,8 +133,8 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.rating {
-    color: #ff8286;
+.rating i,.rating span {
+    color: yellow;
     margin-bottom: 0.5rem;
 }
 
