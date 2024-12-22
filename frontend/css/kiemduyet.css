@@ -1,0 +1,213 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review-list {
+    display: grid; 
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px; 
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Thông tin người dùng */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatars {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.rating {
+    color: #ffc107;
+}
+
+/* Nội dung đánh giá */
+.review-content {
+    margin-bottom: 15px;
+}
+
+.review-content p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.review-images {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.review-images img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {	
+	width:280px;
+	height:100px;
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: 500;
+	font-size:1rem;
+    display: flex;
+    align-items: center;
+	justify-content:center;
+}
+
+.approve {
+    background-color: #a5ecd7;
+    color: #000;
+}
+
+.approve:hover {
+    background-color: #8de0c7;
+}
+
+.reject {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.reject:hover {
+    background-color: #f5f5f5;
+}
+
+/* Form nhập lý do từ chối */
+.rejection-form {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.rejection-reason {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.rejection-reason:focus {
+    outline: none;
+    border-color: #a5ecd7;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.pagination span {
+    color: #666;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 0 auto; 
+    margin-bottom: 2rem;
+}
+
+.nav-items, .nav-user {
+    display: flex;
+    gap: 2rem;
+    align-items: left;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-item.user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
