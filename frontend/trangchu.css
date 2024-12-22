@@ -99,6 +99,24 @@ body {
 	height:50px;
 	cursor: pointer;
 }
+.language-menu {   
+	display:none;
+    position: absolute;
+    top: 50;
+    right: 50;
+	margin-top:0.5rem;
+	margin-left:1rem;
+    background-color: #666;
+    border-radius: 4px;
+    z-index: 1000;
+}
+.language-menu a{
+	text-decoration:none;
+	color:white;
+}
+.language-menu.show {
+    display: block;
+}
 
 /* Hero Section */
 .hero {
