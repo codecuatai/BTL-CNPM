@@ -1,90 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account Settings</title>
-    <link rel="stylesheet" href="css/canhan3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-</head>
-<body>
-	<nav class="navbar">
-        <div class="nav-items">
-            <a href="trangchu.html" class="nav-item active"><i class="fas fa-plane"></i> Tìm chuyến đi</a>
-            <a href="timtour.html" class="nav-item active"><i class="fas fa-map-marked-alt"></i> Tìm tour</a>
+    <link rel="stylesheet" href="css/canhan3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-items">
+        <a href="trangchu.html" class="nav-item active"
+          ><i class="fas fa-plane"></i> Tìm chuyến đi</a
+        >
+        <a href="timtour.html" class="nav-item active"
+          ><i class="fas fa-map-marked-alt"></i> Tìm tour</a
+        >
+      </div>
+      <div class="nav-user">
+        <div class="nav-trans">
+          <button class="nav-item trans">
+            <i class="fas fa-earth"></i>Chuyển đổi ngôn ngữ
+          </button>
         </div>
-        <div class="nav-user">
-			<div class="nav-trans">
-				<button class ="nav-item trans">
-				<i class ="fas fa-earth"></i>Chuyển đổi ngôn ngữ
-				</button>
-			</div>
-            <a href="#" class="nav-item"><i class="fas fa-heart"></i> Yêu thích</a>
-            <a href="#" class="nav-item user">
-                <img src="images/logo.jpg" alt="User" class="avatar">
-                Username
-            </a>			
-        </div>
-		
+        <a href="luutour.html" class="nav-item"
+          ><i class="fas fa-heart"></i> Yêu thích</a
+        >
+        <a href="#" class="nav-item user">
+          <img src="images/logo.jpg" alt="User" class="avatar" />
+          Username
+        </a>
+      </div>
     </nav>
-    <div class="profile-header">	
-		<img src="images/10.png" alt="Profile Background" class="profile-bg">
-        <div class="profile-info">			
-            <div class="profile-avatar">
-                <img src="images/logo.jpg" alt="Profile Avatar">
-            </div>
-            <div class="profile-details">
-                <h2>Username</h2>
-                <p>abc@gmail.com</p>
-            </div>
+    <div class="profile-header">
+      <img src="images/10.png" alt="Profile Background" class="profile-bg" />
+      <div class="profile-info">
+        <div class="profile-avatar">
+          <img src="images/logo.jpg" alt="Profile Avatar" />
         </div>
-        <button class="download-btn">Tải ảnh lên</button>
+        <div class="profile-details">
+          <h2>Username</h2>
+          <p>abc@gmail.com</p>
+        </div>
+      </div>
+      <button class="download-btn">Tải ảnh lên</button>
     </div>
 
     <nav class="settings-nav">
-        <a href="Canhan1.html" >Tài khoản</a>
-        <a href="Canhan2.html">Thông báo/vé/tour</a>
-        <a href="Canhan3.html"class="active">Phương thức thanh toán</a>
+      <a href="Canhan1.html">Tài khoản</a>
+      <a href="Canhan2.html">Thông báo/vé/tour</a>
+      <a href="Canhan3.html" class="active">Phương thức thanh toán</a>
     </nav>
 
     <main class="settings-content">
-        <div class="payment-container">
+      <div class="payment-container">
         <!-- Credit Card Section -->
-			<div class="payment-methods">
-				<div class="credit-card">
-					<div class="card-info">
-						<div class="card-number">**** **** **** </div>
-						<div class="card-number">4321</div>
-						<div class="card-expiry">02/27</div>
-						<div class="card-type">
-							<img src="images/visa.png" alt="VISA" class="visa-logo">
-						</div>
-					</div>
-				</div>
-
-            <!-- Add New Card Button -->
-            <div class="add-card">
-                <button class="add-card-btn">
-                    <span class="plus-icon">+</span>
-                    <span>Thêm thẻ ngân hàng</span>
-                </button>
+        <div class="payment-methods">
+          <div class="credit-card">
+            <div class="card-info">
+              <div class="card-number">**** **** ****</div>
+              <div class="card-number">4321</div>
+              <div class="card-expiry">02/27</div>
+              <div class="card-type">
+                <img src="images/visa.png" alt="VISA" class="visa-logo" />
+              </div>
             </div>
+          </div>
+
+          <!-- Add New Card Button -->
+          <div class="add-card">
+            <button class="add-card-btn">
+              <span class="plus-icon">+</span>
+              <span>Thêm thẻ ngân hàng</span>
+            </button>
+          </div>
         </div>
 
         <!-- Digital Wallet Section -->
         <div class="digital-wallets">
-				<div class="wallet-option">
-					<img src="images/momo.png" alt="MoMo" class="wallet-logo">
-				</div>
-				<div class="wallet-option">
-					<img src="images/zalo.png" alt="ZaloPay" class="wallet-logo">
-				</div>
-				<div class="wallet-option">
-					<img src="images/paypal.png" alt="PayPal" class="wallet-logo">
-				</div>
-			</div>
-		</div>
+          <div class="wallet-option">
+            <img src="images/momo.png" alt="MoMo" class="wallet-logo" />
+          </div>
+          <div class="wallet-option">
+            <img src="images/zalo.png" alt="ZaloPay" class="wallet-logo" />
+          </div>
+          <div class="wallet-option">
+            <img src="images/paypal.png" alt="PayPal" class="wallet-logo" />
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

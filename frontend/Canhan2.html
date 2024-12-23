@@ -1,169 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account Settings</title>
-    <link rel="stylesheet" href="css/canhan2.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-</head>
-<body>
-	<nav class="navbar">
-        <div class="nav-items">
-            <a href="trangchu.html" class="nav-item active"><i class="fas fa-plane"></i> Tìm chuyến đi</a>
-            <a href="timtour.html" class="nav-item active"><i class="fas fa-map-marked-alt"></i> Tìm tour</a>
+    <link rel="stylesheet" href="css/canhan2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-items">
+        <a href="trangchu.html" class="nav-item active"
+          ><i class="fas fa-plane"></i> Tìm chuyến đi</a
+        >
+        <a href="timtour.html" class="nav-item active"
+          ><i class="fas fa-map-marked-alt"></i> Tìm tour</a
+        >
+      </div>
+      <div class="nav-user">
+        <div class="nav-trans">
+          <button class="nav-item trans">
+            <i class="fas fa-earth"></i>Chuyển đổi ngôn ngữ
+          </button>
         </div>
-        <div class="nav-user">
-			<div class="nav-trans">
-				<button class ="nav-item trans">
-				<i class ="fas fa-earth"></i>Chuyển đổi ngôn ngữ
-				</button>
-			</div>
-            <a href="#" class="nav-item"><i class="fas fa-heart"></i> Yêu thích</a>
-            <a href="#" class="nav-item user">
-                <img src="images/logo.jpg" alt="User" class="avatar">
-                Username
-            </a>			
-        </div>
-		
+        <a href="luutour.html" class="nav-item"
+          ><i class="fas fa-heart"></i> Yêu thích</a
+        >
+        <a href="#" class="nav-item user">
+          <img src="images/logo.jpg" alt="User" class="avatar" />
+          Username
+        </a>
+      </div>
     </nav>
     <div class="profile-header">
-		<img src="images/10.png" alt="Profile Background" class="profile-bg">
-        <div class="profile-info">			
-            <div class="profile-avatar">
-                <img src="images/logo.jpg" alt="Profile Avatar">
-            </div>
-            <div class="profile-details">
-                <h2>Username</h2>
-                <p>abc@gmail.com</p>
-            </div>
+      <img src="images/10.png" alt="Profile Background" class="profile-bg" />
+      <div class="profile-info">
+        <div class="profile-avatar">
+          <img src="images/logo.jpg" alt="Profile Avatar" />
         </div>
-        <button class="download-btn">Tải ảnh lên</button>
+        <div class="profile-details">
+          <h2>Username</h2>
+          <p>abc@gmail.com</p>
+        </div>
+      </div>
+      <button class="download-btn">Tải ảnh lên</button>
     </div>
 
     <nav class="settings-nav">
-        <a href="Canhan1.html">Tài khoản</a>
-        <a href="Canhan2.html"class="active">Thông báo/vé/tour</a>
-        <a href="Canhan3.html">Phương thức thanh toán</a>
+      <a href="Canhan1.html">Tài khoản</a>
+      <a href="Canhan2.html" class="active">Thông báo/vé/tour</a>
+      <a href="Canhan3.html">Phương thức thanh toán</a>
     </nav>
 
     <main class="settings-content">
-        <div class="destinations">
-                <!-- Destination Cards will be dynamically loaded here -->
-				 <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="images/Dalat-main.jpg" alt="Đà Lạt">
-                        <span class="image-count"></span>
-                    </div>
-                    <div class="destination-info">
-                        <h2>Đà Lạt</h2>
-                        <div class="rating">						
-                            <div class="stars">★★★★★</div> <span>5 Sao</span>
-                        </div>
-                        <div class="stats">
-                            <span class="score">4.5</span>
-							<span class="review">Tốt</span>
-                        </div>
-                        <div class="action-buttons">
-                            <button class="btn btn-outline">
-								<i class="far fa-heart"></i>
-							</button>
-                            <button class="btn btn-primary"><a href="chitiet.html" class="link">Xem chi tiết</a>
-							</button>
-							
-                        </div>
-                    </div>
-                </div>
-				 <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="images/anh.png" alt="Vịnh Hạ Long">
-                        <span class="image-count"></span>
-                    </div>
-                    <div class="destination-info">
-                        <h2>Vịnh Hạ Long</h2>
-                        <div class="rating">						
-                            <div class="stars">★★★★★</div> <span>5 Sao</span>
-                        </div>
-                        <div class="stats">
-                            <span class="score">4.2</span>
-							<span class="review">Tốt</span>
-                        </div>
-                        <div class="action-buttons">
-                            <button class="btn btn-outline">
-								<i class="far fa-heart"></i>
-							</button>
-                            <button class="btn btn-primary"><a href="chitiet.html" class="link">Xem chi tiết</a></button>
-                        </div>
-                    </div>
-                </div>
-				 <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="images/anh.png" alt="Vịnh Hạ Long">
-                        <span class="image-count"></span>
-                    </div>
-                    <div class="destination-info">
-                        <h2>Vịnh Hạ Long</h2>
-                        <div class="rating">						
-                            <div class="stars">★★★★★</div> <span>5 Sao</span>
-                        </div>
-                        <div class="stats">
-                            <span class="score">4.2</span>
-							<span class="review">Tốt</span>
-                        </div>
-                        <div class="action-buttons">
-                            <button class="btn btn-outline">
-								<i class="far fa-heart"></i>
-							</button>
-                            <button class="btn btn-primary"><a href="chitiet.html" class="link">Xem chi tiết</a></button>
-                        </div>
-                    </div>
-                </div>
-				 <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="images/anh.png" alt="Vịnh Hạ Long">
-                        <span class="image-count"></span>
-                    </div>
-                    <div class="destination-info">
-                        <h2>Vịnh Hạ Long</h2>
-                        <div class="rating">						
-                            <div class="stars">★★★★★</div> <span>5 Sao</span>
-                        </div>
-                        <div class="stats">
-                            <span class="score">4.2</span>
-							<span class="review">Tốt</span>
-                        </div>
-                        <div class="action-buttons">
-                            <button class="btn btn-outline">
-								<i class="far fa-heart"></i>
-							</button>
-                            <button class="btn btn-primary"><a href="chitiet.html" class="link">Xem chi tiết</a></button>
-                        </div>
-                    </div>
-                </div>
-				 <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="images/anh.png" alt="Vịnh Hạ Long">
-                        <span class="image-count"></span>
-                    </div>
-                    <div class="destination-info">
-                        <h2>Vịnh Hạ Long</h2>
-                        <div class="rating">						
-                            <div class="stars">★★★★★</div> <span>5 Sao</span>
-                        </div>
-                        <div class="stats">
-                            <span class="score">4.2</span>
-							<span class="review">Tốt</span>
-                        </div>
-                        <div class="action-buttons">
-                            <button class="btn btn-outline">
-								<i class="far fa-heart"></i>
-							</button>
-                            <button class="btn btn-primary"><a href="chitiet.html" class="link">Xem chi tiết</a></button>
-                        </div>
-                    </div>
-                </div>
+      <div class="destinations">
+        <!-- Destination Cards will be dynamically loaded here -->
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/Dalat-main.jpg" alt="Đà Lạt" />
+            <span class="image-count"></span>
+          </div>
+          <div class="destination-info">
+            <h2>Đà Lạt</h2>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span>5 Sao</span>
             </div>
+            <div class="stats">
+              <span class="score">4.5</span>
+              <span class="review">Tốt</span>
+            </div>
+            <div class="action-buttons">
+              <button class="btn btn-outline">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn btn-primary">
+                <a href="chitiet.html" class="link">Xem chi tiết</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/anh.png" alt="Vịnh Hạ Long" />
+            <span class="image-count"></span>
+          </div>
+          <div class="destination-info">
+            <h2>Vịnh Hạ Long</h2>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span>5 Sao</span>
+            </div>
+            <div class="stats">
+              <span class="score">4.2</span>
+              <span class="review">Tốt</span>
+            </div>
+            <div class="action-buttons">
+              <button class="btn btn-outline">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn btn-primary">
+                <a href="chitiet.html" class="link">Xem chi tiết</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/anh.png" alt="Vịnh Hạ Long" />
+            <span class="image-count"></span>
+          </div>
+          <div class="destination-info">
+            <h2>Vịnh Hạ Long</h2>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span>5 Sao</span>
+            </div>
+            <div class="stats">
+              <span class="score">4.2</span>
+              <span class="review">Tốt</span>
+            </div>
+            <div class="action-buttons">
+              <button class="btn btn-outline">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn btn-primary">
+                <a href="chitiet.html" class="link">Xem chi tiết</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/anh.png" alt="Vịnh Hạ Long" />
+            <span class="image-count"></span>
+          </div>
+          <div class="destination-info">
+            <h2>Vịnh Hạ Long</h2>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span>5 Sao</span>
+            </div>
+            <div class="stats">
+              <span class="score">4.2</span>
+              <span class="review">Tốt</span>
+            </div>
+            <div class="action-buttons">
+              <button class="btn btn-outline">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn btn-primary">
+                <a href="chitiet.html" class="link">Xem chi tiết</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/anh.png" alt="Vịnh Hạ Long" />
+            <span class="image-count"></span>
+          </div>
+          <div class="destination-info">
+            <h2>Vịnh Hạ Long</h2>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span>5 Sao</span>
+            </div>
+            <div class="stats">
+              <span class="score">4.2</span>
+              <span class="review">Tốt</span>
+            </div>
+            <div class="action-buttons">
+              <button class="btn btn-outline">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn btn-primary">
+                <a href="chitiet.html" class="link">Xem chi tiết</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

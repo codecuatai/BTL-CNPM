@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đặt Tour Du Lịch</title>
     <!-- Core Styles -->
-    <link rel="stylesheet" href="css/chinhsua1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-	<nav class="navbar">
-        <div class="nav-items">
-            <a href="chinhsua.html"> ← Chỉnh sửa thông tin</a>
-        </div>
-        <div class="nav-user">				
-            <a href="#" class="nav-item user">
-                <img src="images/logo.jpg" alt="User" class="avatar">
-                Administrator
-            </a>
-        </div>
+    <link rel="stylesheet" href="css/chinhsua1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-items">
+        <a href="chinhsua.html"> ← Chỉnh sửa thông tin</a>
+      </div>
+      <div class="nav-user">
+        <a href="#" class="nav-item user">
+          <img src="images/logo.jpg" alt="User" class="avatar" />
+          Administrator
+        </a>
+      </div>
     </nav>
-	                   
-        <div class="edit-form">
-			<div class="form-section">
-				<h3>Chỉnh sửa ảnh</h3>
-				<div class="image-container">
-					<img src="images/image.png" alt="Tour preview" class="preview-image">
-				</div>
-				<button class="upload-btn">Tải ảnh lên từ thư viện</button>
-				<button class="delete-btn">Xóa ảnh</button>
-			</div>
-			<div class="form-section">
-				<h3>Chỉnh sửa tên tour</h3>
-				<input type="text" class="tour-name" value="Sapa" placeholder="Nhập tên tour">
-			</div>
 
-			<div class="form-section">
-				<h3>Chỉnh sửa thông tin chi tiết</h3>
-				<textarea class="tour-details" placeholder="Nhập thông tin..."></textarea>
-			</div>
-
-        <div class="form-section price-section">
-            <h3>Chỉnh sửa giá cả</h3>
-            <div class="price-inputs">
-                <input type="number" class="price-select" placeholder="$220" >
-                <input type="text" class="discount-input" placeholder="Nhập mã giảm giá...">
-            </div>
+    <div class="edit-form">
+      <div class="form-section">
+        <h3>Chỉnh sửa ảnh</h3>
+        <div class="image-container">
+          <img
+            src="images/image.png"
+            alt="Tour preview"
+            class="preview-image"
+          />
         </div>
-        <button class="save-btn">Lưu thay đổi</button>  
+        <button class="upload-btn">Tải ảnh lên từ thư viện</button>
+        <button class="delete-btn">Xóa ảnh</button>
+      </div>
+      <div class="form-section">
+        <h3>Chỉnh sửa tên tour</h3>
+        <input
+          type="text"
+          class="tour-name"
+          value="Sapa"
+          placeholder="Nhập tên tour"
+        />
+      </div>
+
+      <div class="form-section">
+        <h3>Chỉnh sửa thông tin chi tiết</h3>
+        <textarea
+          class="tour-details"
+          placeholder="Nhập thông tin..."
+        ></textarea>
+      </div>
+
+      <div class="form-section price-section">
+        <h3>Chỉnh sửa giá cả</h3>
+        <div class="price-inputs">
+          <input type="number" class="price-select" placeholder="$220" />
+          <input
+            type="text"
+            class="discount-input"
+            placeholder="Nhập mã giảm giá..."
+          />
+        </div>
+      </div>
+      <button class="save-btn">Lưu thay đổi</button>
     </div>
-</body>
+  </body>
 </html>
